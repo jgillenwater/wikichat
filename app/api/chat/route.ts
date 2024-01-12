@@ -7,8 +7,8 @@ import {
   AstraDBVectorStore,
   AstraLibArgs,
 } from "@langchain/community/vectorstores/astradb";
-import { ChatOpenAI } from "langchain/chat_models/openai";
-import { PromptTemplate } from "langchain/prompts";
+import { ChatOpenAI } from "@langchain/openai";
+import { PromptTemplate } from "@langchain/core/prompts";
 import { StreamingTextResponse, Message } from "ai";
 
 const {

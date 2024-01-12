@@ -16,7 +16,8 @@ const Bubble:JSXElementConstructor<any> = forwardRef(function Bubble({ content }
           <Markdown
             remarkPlugins={[remarkGfm]}
             components={{
-              a({ href, children }) {
+              a({ href, children, ...props }) {
+                console.log(props)
                 setHasSource(true);
                 return (
                   <span className="source-link flex no-wrap">
